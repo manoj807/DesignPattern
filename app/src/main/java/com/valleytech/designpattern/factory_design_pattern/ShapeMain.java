@@ -1,13 +1,12 @@
 package com.valleytech.designpattern.factory_design_pattern;
 
-import com.valleytech.designpattern.abstract_factory_design_pattern.shape.Shape;
 
 public class ShapeMain {
 
     public  static void main(String ar[])
     {
 
-        Shape shape=ShapeFactory.getShape("Circle");
+        Shape shape=ShapeFactory.getShape(ShapeFactory.ShapeType.CIRCLE);
 
            shape.draw();
 
