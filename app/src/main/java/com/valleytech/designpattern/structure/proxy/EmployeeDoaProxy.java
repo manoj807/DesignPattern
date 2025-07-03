@@ -43,7 +43,9 @@ public class EmployeeDoaProxy implements EmployeeDao
 
         if(client.equals("Admin") || client.equals("User"))
         {
-          return employeeDao.get(client,employeeId);
+
+           return employeeDao.get(client,employeeId);
+
         }
 
         throw new Exception("Access Denied");

@@ -6,9 +6,15 @@ public class ShapeMain {
     public  static void main(String ar[])
     {
 
-        Shape shape=ShapeFactory.getShape(ShapeFactory.ShapeType.CIRCLE);
+           Shape shape= ClientWithoutFactory.getShape(ClientWithoutFactory.ShapeType.CIRCLE);
 
-           shape.draw();
+              shape.draw();
+
+                Shape circle= ClientWithFactory.getShape(new CircleFactory());
+                circle.draw();
+
+                Shape square= ClientWithFactory.getShape(new SquareFactory());
+                square.draw();
 
     }
 }
